@@ -1,47 +1,352 @@
-# Drone Geo AI Platform (Conceito)
+# 🌍 GeoSentinel
 
-Plataforma conceitual que integra drones, dados geoespaciais (incluindo imagens de satélite) 
-e Inteligência Artificial para monitoramento de ativos e áreas de difícil acesso, com foco em 
-segurança e governança de dados geoespaciais estratégicos.
+> **Plataforma inteligente de monitoramento geoespacial utilizando drones, imagens de satélite, Inteligência Artificial e cibersegurança.**
 
-> ⚠️ **Status do repositório:** este projeto está em fase de estruturação. O código-fonte 
-> está passando por um processo de limpeza (remoção de credenciais, chaves de API e dados 
-> sensíveis) antes de ser publicado. Por enquanto, o repositório contém apenas a estrutura 
-> de pastas e a documentação conceitual do projeto.
+![Status](https://img.shields.io/badge/status-Conceito-orange)
+![Version](https://img.shields.io/badge/version-0.1.0-blue)
+![License](https://img.shields.io/badge/license-Proprietária-lightgrey)
 
-## Visão geral
+---
 
-A proposta é combinar coleta de dados em campo por drones com informações de satélite, 
-usando modelos de IA para identificar alterações no terreno, riscos estruturais e padrões 
-relevantes para tomada de decisão — com uma camada de segurança e controle de acesso 
-tratada como parte central da arquitetura, não como item secundário.
+## 📌 Sobre o projeto
 
-## Estrutura do projeto
+O **GeoSentinel** é um projeto conceitual que tem como objetivo desenvolver uma plataforma para monitoramento inteligente de ativos, infraestrutura crítica e áreas de difícil acesso por meio da integração entre drones, dados geoespaciais, imagens de satélite e Inteligência Artificial.
 
-- `src/drone-integration/` — coleta e ingestão de dados de voo/imagens
-- `src/ai-processing/` — modelos de análise de imagem e dados geoespaciais
-- `src/geospatial-api/` — camada de API para consumo dos dados processados
-- `src/security/` — controle de acesso, criptografia e trilha de auditoria
-- `docs/` — documentação técnica e conceitual
-- `notebooks/` — experimentos e protótipos de análise
+O projeto encontra-se em sua **fase inicial de concepção e arquitetura**. Neste momento, o repositório serve principalmente como documentação da visão do produto, da arquitetura proposta e do roadmap de desenvolvimento.
 
-## Roadmap
+> ⚠️ **Importante**
+>
+> O código-fonte será publicado gradualmente conforme os módulos forem amadurecendo.
+>
+> Antes da publicação, todo o código passará por um processo de revisão para remoção de:
+>
+> - Credenciais
+> - API Keys
+> - Tokens
+> - Dados sensíveis
+> - Configurações internas
+> - Informações confidenciais
+>
+> Durante essa etapa, o repositório permanecerá com foco na documentação e estrutura do projeto.
+>
+> Mesmo após a disponibilização do código, o GeoSentinel continuará sendo considerado um **projeto em desenvolvimento (Proof of Concept / MVP)** até que sua arquitetura esteja consolidada.
 
-- [ ] Estruturação da arquitetura geral
-- [ ] MVP de um caso de uso único (inspeção de ativos remotos)
-- [ ] Integração básica drone → processamento de imagem
-- [ ] Camada de controle de acesso e auditoria
-- [ ] Publicação do código-fonte após revisão de segurança
+---
 
-## Contexto
+# 🎯 Objetivo
 
-Projeto conceitual desenvolvido no contexto do Programa Future Tech Leaders Brasil 
-(Bootcamp de Tecnologias Espaciais), unindo experiência prática em governança de TI e 
-segurança da informação com interesse em tecnologias espaciais e geoespaciais.
+Criar uma plataforma capaz de integrar diferentes fontes de dados geoespaciais para auxiliar organizações públicas e privadas na tomada de decisão por meio de análises automatizadas.
 
-## Licença
+A proposta busca unir:
 
-Este projeto é distribuído sob uma licença proprietária, que permite o uso do conteúdo mas
-restringe modificação e redistribuição sem autorização — veja o arquivo [LICENSE](LICENSE)
-para mais detalhes. A licença poderá ser alterada para MIT (ou outra licença aberta) em uma
-fase mais madura do projeto.
+- 🚁 Drones
+- 🛰️ Imagens de satélite
+- 🤖 Inteligência Artificial
+- 📍 Dados geoespaciais
+- 🔒 Governança e Cibersegurança
+- 📊 Analytics
+
+em uma única plataforma.
+
+---
+
+# 💡 Casos de uso
+
+O GeoSentinel poderá ser aplicado em diversos cenários, como:
+
+- Monitoramento ambiental
+- Agricultura de precisão
+- Infraestrutura crítica
+- Linhas de transmissão
+- Rodovias
+- Ferrovias
+- Oleodutos
+- Mineração
+- Defesa Civil
+- Gestão de ativos
+- Áreas remotas
+- Monitoramento de obras
+- Smart Cities
+
+---
+
+# 🏗️ Arquitetura Conceitual
+
+```text
+               Satélites
+                    │
+                    ▼
+          Dados Geoespaciais
+                    │
+                    │
+Drones ─────────────┘
+                    │
+                    ▼
+          Pipeline de Dados
+                    │
+      ┌─────────────┴─────────────┐
+      │                           │
+      ▼                           ▼
+Visão Computacional         Machine Learning
+(OpenCV / YOLO)      (XGBoost / LightGBM)
+      │                           │
+      └─────────────┬─────────────┘
+                    ▼
+              Large Language Models
+          (Qwen • DeepSeek • Gemma)
+                    │
+                    ▼
+             API / Backend
+                    │
+                    ▼
+          Dashboard Geoespacial
+                    │
+                    ▼
+      Governança • Segurança • Auditoria
+```
+
+---
+
+# 📁 Estrutura do projeto
+
+```text
+GeoSentinel/
+
+├── docs/
+├── notebooks/
+├── src/
+│   ├── ai-processing/
+│   ├── drone-integration/
+│   ├── geospatial-api/
+│   ├── security/
+│   ├── analytics/
+│   └── dashboard/
+│
+├── tests/
+├── LICENSE
+└── README.md
+```
+
+---
+
+# 🧠 Tecnologias previstas
+
+## 🚁 Integração com drones
+
+- C++
+- Python
+- MAVLink
+- PX4
+- ArduPilot
+
+---
+
+## ⚙️ Backend
+
+- Python
+- FastAPI
+
+---
+
+## 👁️ Visão Computacional
+
+- OpenCV
+- YOLO
+- Segment Anything (SAM)
+- Detectron2
+
+---
+
+## 📈 Machine Learning
+
+- Scikit-Learn
+- XGBoost
+- LightGBM
+
+---
+
+## 🧠 Large Language Models (LLMs)
+
+Modelos open-weight com possibilidade de execução local ou em infraestrutura dedicada.
+
+### Modelos
+
+- Qwen 3
+- DeepSeek R1
+- DeepSeek V4
+- Gemma 3
+- Llama 4
+- Mistral Large
+
+### Frameworks
+
+- Ollama
+- Hugging Face Transformers
+- vLLM
+- LangChain
+- LlamaIndex
+
+---
+
+## 🌎 Geoespacial
+
+- PostGIS
+- OpenStreetMap
+- Leaflet
+- CesiumJS
+- APIs de imagens de satélite
+
+---
+
+## 📊 Data Analytics
+
+- Pandas
+- Polars
+- DuckDB
+- Apache Arrow
+
+---
+
+## 💾 Banco de Dados
+
+- PostgreSQL
+- Redis
+
+---
+
+## ☁️ Infraestrutura
+
+- Docker
+- Docker Compose
+- Nginx
+- Kubernetes *(planejado)*
+- Azure
+- AWS
+
+---
+
+## 🔐 Segurança
+
+- OAuth2
+- JWT
+- RBAC
+- Auditoria
+- Criptografia
+- Gestão de Identidade
+
+---
+
+# 🧠 Papel da Inteligência Artificial
+
+A IA no GeoSentinel será dividida em três camadas principais.
+
+### Visão Computacional
+
+Responsável por detectar automaticamente:
+
+- queimadas
+- rachaduras
+- erosões
+- invasões
+- desmatamento
+- mudanças ambientais
+- falhas estruturais
+
+---
+
+### Machine Learning
+
+Utilizado para:
+
+- classificação
+- previsão
+- detecção de anomalias
+- análises temporais
+- modelos preditivos
+
+---
+
+### Large Language Models
+
+Os LLMs não terão como objetivo analisar imagens diretamente.
+
+Seu papel será:
+
+- gerar relatórios automáticos;
+- resumir inspeções;
+- responder perguntas em linguagem natural;
+- atuar como assistente inteligente da plataforma;
+- apoiar a tomada de decisão com base nos dados processados.
+
+---
+
+# 📌 Diferencial do projeto
+
+O GeoSentinel não pretende ser apenas um software para gerenciamento de drones.
+
+A proposta é construir uma plataforma completa de **Inteligência Geoespacial (Geospatial Intelligence – GEOINT)**, integrando:
+
+- coleta de dados;
+- processamento;
+- Inteligência Artificial;
+- análise espacial;
+- governança;
+- cibersegurança;
+- visualização de informações.
+
+A segurança da informação faz parte da arquitetura desde sua concepção, tratando dados geoespaciais estratégicos com o mesmo nível de preocupação aplicado a ambientes corporativos críticos.
+
+---
+
+# 🚀 Roadmap
+
+## Fase 1
+
+- [x] Definição da visão do produto
+- [x] Arquitetura conceitual
+- [ ] Definição da stack tecnológica
+- [ ] Modelagem inicial
+
+---
+
+## Fase 2
+
+- [ ] MVP
+- [ ] API
+- [ ] Dashboard
+- [ ] Integração com drones
+- [ ] Banco geoespacial
+
+---
+
+## Fase 3
+
+- [ ] IA para análise de imagens
+- [ ] Machine Learning
+- [ ] Analytics
+- [ ] Relatórios automáticos
+
+---
+
+## Fase 4
+
+- [ ] Integração com LLMs
+- [ ] Assistente inteligente
+- [ ] Segurança avançada
+- [ ] Escalabilidade
+
+---
+
+# 📖 Status
+
+🚧 Em desenvolvimento.
+
+Este repositório documenta a evolução do projeto desde sua fase conceitual até futuras implementações práticas.
+
+---
+
+# 📄 Licença
+
+Este projeto utiliza uma licença proprietária.
+
+O código será disponibilizado gradualmente conforme sua maturidade e revisão de segurança. A licença poderá ser revisada futuramente caso o projeto evolua para um modelo open source.
