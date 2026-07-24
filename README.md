@@ -1,3 +1,5 @@
+<div align="center"> <img src="assets/banner.png" alt="GeoSentinel banner" width="960"/> <br/>
+  
 <div align="center">
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 280" width="960" height="280">
