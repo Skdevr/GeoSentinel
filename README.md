@@ -1,111 +1,24 @@
 # 🌍 GeoSentinel
 
-> **Geospatial Intelligence Platform**
+> **Geospatial Intelligence (GEOINT) Platform**
 >
-> Plataforma de Inteligência Geoespacial utilizando imagens de satélite,
-> drones, dados geoespaciais, Inteligência Artificial e Cibersegurança.
+> Plataforma de monitoramento inteligente que integra satélites, drones,
+> dados geoespaciais, Inteligência Artificial e Cibersegurança.
 
 ![Status](https://img.shields.io/badge/status-Em%20Desenvolvimento-orange)
-![Stage](https://img.shields.io/badge/stage-Concept%20%2F%20MVP-blue)
-![License](https://img.shields.io/badge/license-Proprietary-red)
-
-------------------------------------------------------------------------
-
-## 📖 Índice
-
--   Sobre
--   Objetivo
--   Casos de Uso
--   Arquitetura
--   Roadmap Tecnológico
--   Stack
--   IA no GeoSentinel
--   Estrutura
--   Roadmap
--   Licença
+![Stage](https://img.shields.io/badge/stage-MVP-blue)
+![Backend](https://img.shields.io/badge/backend-Python→Go-00ADD8)
 
 ------------------------------------------------------------------------
 
 # 📌 Sobre
 
-O **GeoSentinel** é uma plataforma de **Geospatial Intelligence
-(GEOINT)** em desenvolvimento para monitoramento inteligente de ativos,
-infraestrutura crítica e áreas de interesse.
+O GeoSentinel é uma plataforma de GEOINT para monitoramento de
+infraestrutura, meio ambiente e ativos críticos.
 
-A plataforma integra:
-
--   🛰️ Imagens de satélite
--   🚁 Drones
--   🗺️ Dados geoespaciais
--   🤖 Inteligência Artificial
--   📊 Analytics
--   🔒 Cibersegurança
-
-O projeto encontra-se em fase de arquitetura e documentação. O código
-será publicado gradualmente conforme cada módulo atingir maturidade
-suficiente.
-
-> **Importante**
->
-> Antes da publicação todo código passa por revisão para remoção de
-> credenciais, tokens, API Keys e demais informações sensíveis.
-
-------------------------------------------------------------------------
-
-# 🎯 Objetivo
-
-Transformar dados geoespaciais em informações acionáveis para
-organizações públicas e privadas através da integração entre
-sensoriamento remoto, IA e analytics.
-
-------------------------------------------------------------------------
-
-# 💼 Casos de Uso
-
--   Agricultura de Precisão
--   Monitoramento Ambiental
--   Defesa Civil
--   Infraestrutura Crítica
--   Energia
--   Rodovias
--   Ferrovias
--   Mineração
--   Oleodutos
--   Gasodutos
--   Smart Cities
--   Monitoramento de Obras
--   Gestão de Ativos
-
-------------------------------------------------------------------------
-
-# 🏗️ Arquitetura Conceitual
-
-``` text
-Satélites ─┐
-           │
-Drones ────┼────► Data Ingestion
-           │
-APIs GIS ──┘
-                │
-                ▼
-      Geospatial Processing
-                │
-      ┌─────────┴─────────┐
-      ▼                   ▼
-Computer Vision      Spatial Analytics
-      │                   │
-      └─────────┬─────────┘
-                ▼
-       Machine Learning
-                ▼
-       Large Language Models
-                ▼
-         Backend / APIs
-                ▼
- Dashboard Geoespacial
-                ▼
-Governança • Segurança • Auditoria
-```
+O projeto está em fase de arquitetura e MVP. As tecnologias listadas
+representam o **roadmap tecnológico** e poderão evoluir conforme o
+estado da arte e as necessidades do produto.
 
 ------------------------------------------------------------------------
 
@@ -113,184 +26,125 @@ Governança • Segurança • Auditoria
 
 ## MVP
 
-### Backend
-
 -   Python
 -   FastAPI
-
-### Banco
-
--   PostgreSQL
--   PostGIS
-
-### Front-end
-
--   React
--   Next.js
+-   PostgreSQL + PostGIS
+-   React + Next.js
 -   Leaflet
-
-### IA
-
 -   OpenCV
-
-------------------------------------------------------------------------
 
 ## Evolução
 
-Após validação do MVP, serviços críticos serão migrados gradualmente
-para **Go**, priorizando desempenho, concorrência e escalabilidade.
+-   Go (serviços críticos)
+-   gRPC
+-   Redis
+-   Kubernetes
 
 ------------------------------------------------------------------------
 
-# 🛠️ Tecnologias Previstas
-
-Estas tecnologias representam a direção técnica do projeto e poderão ser
-incorporadas conforme sua evolução.
+# 🛠️ Tecnologias Planejadas
 
 ## Backend
 
 -   Python (MVP)
--   Go (Produção)
+-   Go (produção)
 
-## Computer Vision
+## Front-end
 
--   OpenCV
--   YOLO
--   Segment Anything (SAM)
--   Detectron2
+-   React
+-   Next.js
+-   TypeScript
+-   Tailwind CSS
 
-## Machine Learning
+## Banco de Dados
 
--   Scikit-Learn
--   XGBoost
--   LightGBM
-
-## LLMs
-
--   Qwen
--   Gemma
--   DeepSeek
--   Llama
--   Mistral
--   Kimi
-
-## Frameworks
-
--   Ollama
--   Hugging Face Transformers
--   vLLM
--   LangChain
--   LlamaIndex
+-   PostgreSQL
+-   PostGIS
+-   Redis
 
 ## Geoespacial
 
+-   GDAL
+-   Rasterio
+-   GeoPandas
 -   PostGIS
 -   Leaflet
 -   CesiumJS
 -   OpenStreetMap
 
-## Banco
+## Computer Vision
 
--   PostgreSQL
--   Redis
+Tecnologias candidatas: - OpenCV - YOLO - Segment Anything (SAM) -
+Detectron2
+
+## Machine Learning
+
+Tecnologias candidatas: - Scikit-Learn - XGBoost - LightGBM - CatBoost
+
+## Large Language Models
+
+O GeoSentinel será agnóstico ao modelo.
+
+Modelos atualmente considerados:
+
+-   Qwen
+-   Gemma
+-   GLM
+-   DeepSeek
+-   Llama
+-   Kimi
+
+## Frameworks de IA
+
+Tecnologias em avaliação:
+
+-   Ollama
+-   vLLM
+-   Hugging Face Transformers
+-   LangChain
+-   LlamaIndex
+
+## Observabilidade
+
+-   OpenTelemetry
+-   Prometheus
+-   Grafana
 
 ## Infraestrutura
 
 -   Docker
 -   Docker Compose
--   Kubernetes (Planejado)
+-   Kubernetes
+-   GitHub Actions
+-   Terraform
 -   AWS
 -   Azure
 
 ## Segurança
 
--   OAuth2
+-   OAuth2 / OpenID Connect
 -   JWT
 -   RBAC
--   Auditoria
+-   Keycloak (IAM)
 -   Criptografia
--   Gestão de Identidade
+-   Auditoria
+-   Open Policy Agent (planejado)
 
 ------------------------------------------------------------------------
 
-# 🧠 IA no GeoSentinel
+# 🧠 Princípios
 
-## Computer Vision
-
-Detecção automática de: - Queimadas - Desmatamento - Rachaduras - Falhas
-estruturais - Invasões - Mudanças ambientais
-
-## Machine Learning
-
--   Classificação
--   Previsão
--   Detecção de anomalias
--   Modelos preditivos
-
-## IA Generativa
-
-Os LLMs atuarão como assistentes inteligentes para:
-
--   geração automática de relatórios;
--   resumo de inspeções;
--   consultas em linguagem natural;
--   apoio à tomada de decisão.
-
-------------------------------------------------------------------------
-
-# 📂 Estrutura
-
-``` text
-GeoSentinel/
-├── docs/
-├── backend/
-├── frontend/
-├── ai/
-├── geospatial/
-├── infra/
-├── tests/
-├── README.md
-└── LICENSE
-```
-
-------------------------------------------------------------------------
-
-# ⭐ Diferenciais
-
--   GEOINT desde a concepção
--   Arquitetura modular
 -   API First
--   Security by Design
 -   Cloud Native
--   IA integrada ao fluxo geoespacial
--   Suporte futuro a ambientes cloud e on-premises
-
-------------------------------------------------------------------------
-
-# 🚀 Roadmap
-
-  Fase   Objetivo
-  ------ ----------------------------
-  1      Arquitetura e documentação
-  2      MVP
-  3      Banco geoespacial
-  4      Integração com drones
-  5      Computer Vision
-  6      Machine Learning
-  7      IA Generativa
-  8      Escalabilidade
-
-------------------------------------------------------------------------
-
-# 📖 Status
-
-🚧 **Em desenvolvimento**
+-   Security by Design
+-   AI-Ready
+-   Arquitetura Modular
+-   Observabilidade
+-   Infraestrutura como Código
+-   Componentes desacoplados
 
 ------------------------------------------------------------------------
 
 # 📄 Licença
 
 Licença Proprietária.
-
-O código será disponibilizado gradualmente conforme a evolução e revisão
-de segurança do projeto.
