@@ -5,8 +5,9 @@
 > Plataforma de monitoramento inteligente que integra satélites, drones,
 > dados geoespaciais, Inteligência Artificial e Cibersegurança.
 
-![Status](https://img.shields.io/badge/status-Em%20Desenvolvimento-orange)
-![Stage](https://img.shields.io/badge/stage-MVP-blue)
+![Status](https://img.shields.io/badge/status-Conceito-orange)
+![Version](https://img.shields.io/badge/version-0.1.0-blue)
+![License](https://img.shields.io/badge/license-Proprietária-lightgrey)
 ![Backend](https://img.shields.io/badge/backend-Python→Go-00ADD8)
 
 ------------------------------------------------------------------------
